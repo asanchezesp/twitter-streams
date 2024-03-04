@@ -14,7 +14,6 @@ import org.springframework.kafka.core.ProducerFactory;
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Properties;
 
 @Configuration
 @RequiredArgsConstructor
