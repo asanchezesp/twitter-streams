@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: file://Users/alejandrosanchez/Documents/Programacion/Java/curso-ms-event-stream/twitter-streams/config-server-directory
+          clone-on-start: true
