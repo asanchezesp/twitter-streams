@@ -33,4 +33,4 @@ build/
 .vscode/
 
 #Logs
-twitter-to-kafka-service/logs/
+**/logs/*
