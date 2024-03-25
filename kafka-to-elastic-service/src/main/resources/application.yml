@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: kafka-to-elastic-service
+  profiles:
+    active: kafka_to_elastic
+  config:
+    import: configserver:http://localhost:8888
+  cloud:
+    config:
+      name: kafka-to-elastic-service,config-client
+
