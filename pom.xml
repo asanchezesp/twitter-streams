@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.2.2</version>
+        <version>3.2.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>es.asanchez</groupId>
@@ -34,7 +34,7 @@
 
     <properties>
         <java.version>21</java.version>
-        <spring-boot.version>3.2.2</spring-boot.version>
+        <spring-boot.version>3.2.4</spring-boot.version>
         <lombok.version>1.18.30</lombok.version>
         <avro.version>1.11.3</avro.version>
         <spring-kafka.version>3.1.2</spring-kafka.version>
@@ -170,17 +170,6 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
                 <version>${spring-boot.version}</version>
-            </dependency>
-            <!-- TODO: Mover las versiones cuando vea que funciona-->
-            <dependency>
-                <groupId>org.elasticsearch</groupId>
-                <artifactId>elasticsearch</artifactId>
-                <version>8.13.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.elasticsearch.client</groupId>
-                <artifactId>elasticsearch-rest-high-level-client</artifactId>
-                <version>7.17.19</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
