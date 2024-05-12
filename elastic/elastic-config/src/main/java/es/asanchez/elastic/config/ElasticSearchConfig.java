@@ -9,7 +9,7 @@ import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfigurat
 import org.springframework.data.elasticsearch.repository.config.EnableElasticsearchRepositories;
 
 @Configuration
-@EnableElasticsearchRepositories(basePackages = "es.asanchez.elastic.index.client.repository")
+@EnableElasticsearchRepositories(basePackages = "es.asanchez.elastic")
 @RequiredArgsConstructor
 public class ElasticSearchConfig extends ElasticsearchConfiguration {
 

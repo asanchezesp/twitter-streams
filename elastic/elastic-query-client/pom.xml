@@ -26,6 +26,10 @@
             <groupId>es.asanchez</groupId>
             <artifactId>elastic-model</artifactId>
         </dependency>
+        <dependency>
+            <groupId>es.asanchez</groupId>
+            <artifactId>common-util</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
