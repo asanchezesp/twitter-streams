@@ -31,7 +31,7 @@ public class ElasticDocumentController {
     }
 
     @PostMapping("get-document-by-text")
-    public ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(@ResponseBody ElasticQueryServiceRequestModel request){
+    public ResponseEntity<List<ElasticQueryServiceResponseModel>> getDocumentByText(@RequestBody ElasticQueryServiceRequestModel request){
         List<ElasticQueryServiceResponseModel> response = new ArrayList<>();
         LOG.info("ElasticSearch returned {} documents", response.size());
         return ResponseEntity.ok(response);
