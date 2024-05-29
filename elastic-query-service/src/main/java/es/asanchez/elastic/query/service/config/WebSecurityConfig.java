@@ -1,10 +1,11 @@
 package es.asanchez.elastic.query.service.config;
 
+import es.asanchez.app.config.UserConfigData;
+import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.Customizer;
-import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -18,7 +19,10 @@ import org.springframework.security.web.SecurityFilterChain;
 
 @Configuration
 @EnableWebSecurity
+@AllArgsConstructor
 public class WebSecurityConfig {
+
+    private final UserConfigData configData;
 
     @Bean
     SecurityFilterChain web(HttpSecurity http,AuthenticationManager authenticationManager) throws Exception {
@@ -36,9 +40,9 @@ public class WebSecurityConfig {
     public UserDetailsService userDetailsService() {
         // Define un usuario en memoria
         InMemoryUserDetailsManager manager = new InMemoryUserDetailsManager();
-        manager.createUser(User.withUsername("user")
-                .password(passwordEncoder().encode("password"))
-                .roles("USER")
+        manager.createUser(User.withUsername(configData.getUsername())
+                .password(passwordEncoder().encode(configData.getPwd()))
+                .roles(configData.getRoles())
                 .build());
         return manager;
     }
