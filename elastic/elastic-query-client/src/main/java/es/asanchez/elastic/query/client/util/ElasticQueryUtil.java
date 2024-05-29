@@ -1,4 +1,4 @@
-package es.asanchez.query.client.util;
+package es.asanchez.elastic.query.client.util;
 
 import co.elastic.clients.elasticsearch._types.query_dsl.BoolQuery;
 import co.elastic.clients.elasticsearch._types.query_dsl.MatchQuery;

@@ -1,4 +1,4 @@
-package es.asanchez.query.client.exception;
+package es.asanchez.elastic.query.client.exception;
 
 public class ElasticQueryClientException extends RuntimeException {
 

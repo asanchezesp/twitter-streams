@@ -1,11 +1,11 @@
-package es.asanchez.query.client.service;
+package es.asanchez.elastic.query.client.service;
 
 import es.asanchez.app.config.ElasticConfigData;
 import es.asanchez.app.config.ElasticQueryConfigData;
+import es.asanchez.elastic.query.client.exception.ElasticQueryClientException;
+import es.asanchez.elastic.query.client.service.api.IElasticQueryClient;
+import es.asanchez.elastic.query.client.util.ElasticQueryUtil;
 import es.asanchez.elastic.model.index.TwitterIndexModel;
-import es.asanchez.query.client.exception.ElasticQueryClientException;
-import es.asanchez.query.client.service.api.IElasticQueryClient;
-import es.asanchez.query.client.util.ElasticQueryUtil;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

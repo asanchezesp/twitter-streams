@@ -1,4 +1,4 @@
-package es.asanchez.query.client.repository;
+package es.asanchez.elastic.query.client.repository;
 
 import es.asanchez.elastic.model.index.TwitterIndexModel;
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;

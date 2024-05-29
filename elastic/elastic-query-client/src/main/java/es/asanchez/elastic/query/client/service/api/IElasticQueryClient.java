@@ -1,4 +1,4 @@
-package es.asanchez.query.client.service.api;
+package es.asanchez.elastic.query.client.service.api;
 
 import es.asanchez.elastic.model.index.api.IndexModel;
 
