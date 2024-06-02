@@ -15,7 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "documents")
+@RequestMapping(value = "/documents")
 @RequiredArgsConstructor
 public class ElasticDocumentController {
 
