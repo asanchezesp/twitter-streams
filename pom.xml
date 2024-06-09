@@ -24,6 +24,7 @@
         <module>elastic</module>
         <module>common-util</module>
         <module>elastic-query-service</module>
+        <module>elastic-query-web-client</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -183,6 +184,12 @@
                 <artifactId>spring-boot-starter-data-elasticsearch</artifactId>
                 <version>${spring-boot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.thymeleaf.extras</groupId>
+                <artifactId>thymeleaf-extras-springsecurity6</artifactId>
+                <version>3.1.2.RELEASE</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
